@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="rw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoStartup - Mobile First Landing Page</title>
+    <!-- Huza iyi na file yawe ya Tailwind yubatse -->
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-white text-gray-900 antialiased">
+    <!-- 1. NAVIGATION (Header) -->
+    <header
+      class="flex justify-between items-center px-6 py-5 max-w-7xl mx-auto"
+    >
+      <div class="text-2xl font-extrabold text-blue-600 tracking-tight">
+        GoStartup
+      </div>
+      <nav class="hidden md:flex space-x-8 font-medium">
+        <a href="#" class="hover:text-blue-600 transition">Home</a>
+        <a href="#" class="hover:text-blue-600 transition">Features</a>
+        <a href="#" class="hover:text-blue-600 transition">Pricing</a>
+        <a href="#" class="hover:text-blue-600 transition">Contact</a>
+      </nav>
+      <button
+        class="bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
+      >
+        Sign In
+      </button>
+    </header>
+
+    <main>
+      <!-- 2. HERO SECTION (The 90% Rule) -->
+      <section class="py-12 md:py-24 px-4 text-center">
+        <div class="max-w-3xl mx-auto mb-10">
+          <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+            Build Your Next Startup <span class="text-blue-600">Faster</span>
+          </h1>
+          <p class="text-lg text-gray-600 mb-8">
+            High-quality Tailwind CSS templates for developers and startups.
+            Fully responsive and easy to customize.
+          </p>
+        </div>
+
+        <!-- Image Container: 90% width on Mobile, Max-width on Desktop -->
+        <div
+          class="w-[90%] md:w-full max-w-5xl mx-auto bg-gray-100 rounded-3xl overflow-hidden shadow-2xl relative border border-gray-200"
+        >
+          <img
+            src="images/hero-preview.jpg"
+            alt="Template Preview"
+            class="w-full h-auto object-cover"
+          />
+
+          <!-- CTA Button Overlay/Beneath -->
+          <div
+            class="py-8 md:absolute md:bottom-10 md:left-1/2 md:-translate-x-1/2 w-full"
+          >
+            <button
+              class="bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold shadow-xl hover:scale-105 transition-transform"
+            >
+              Get Started Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. PRICING SECTION -->
+      <section class="bg-gray-50 py-20 px-6 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Affordable Pricing
+          </h2>
+          <p class="text-gray-500 max-w-xl mx-auto">
+            Choose the perfect plan that fits your business needs and budget.
+          </p>
+        </div>
+
+        <!-- Pricing Grid (Mobile: 1 column, Desktop: 3 columns) -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto"
+        >
+          <!-- Free Plan -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 text-center"
+          >
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Free</h3>
+            <p class="text-gray-500 mb-6 font-medium">Basic features</p>
+            <div class="text-4xl font-black mb-8">
+              $0<span class="text-base font-normal text-gray-400">/mo</span>
+            </div>
+            <ul class="text-left space-y-4 mb-8 text-gray-600">
+              <li>✅ All UI Components</li>
+              <li>✅ Lifetime Access</li>
+              <li class="text-gray-300">❌ Commercial Use</li>
+              <li class="text-gray-300">❌ Email Support</li>
+            </ul>
+            <button
+              class="w-full py-3 border-2 border-blue-600 text-blue-600 font-bold rounded-xl hover:bg-blue-50 transition"
+            >
+              Choose Free
+            </button>
+          </div>
+
+          <!-- Basic Plan (HIGHLIGHTED CARD) -->
+          <div
+            class="bg-white p-10 rounded-2xl shadow-2xl border-4 border-blue-600 text-center relative z-10 md:scale-110"
+          >
+            <div
+              class="absolute -top-5 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-6 py-1 rounded-full text-sm font-bold uppercase tracking-widest"
+            >
+              Most Popular
+            </div>
+            <h3 class="text-xl font-bold text-blue-600 mb-2">Basic</h3>
+            <p class="text-gray-500 mb-6 font-medium">For growing startups</p>
+            <div class="text-4xl font-black mb-8">
+              $19<span class="text-base font-normal text-gray-400">/mo</span>
+            </div>
+            <ul class="text-left space-y-4 mb-8 text-gray-600">
+              <li>✅ All UI Components</li>
+              <li>✅ Lifetime Access</li>
+              <li>✅ Commercial Use</li>
+              <li>✅ Email Support</li>
+            </ul>
+            <button
+              class="w-full py-3 bg-blue-600 text-white font-bold rounded-xl shadow-lg hover:bg-blue-700 transition"
+            >
+              Choose Basic
+            </button>
+          </div>
+
+          <!-- Premium Plan -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 text-center"
+          >
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Premium</h3>
+            <p class="text-gray-500 mb-6 font-medium">Unlimited options</p>
+            <div class="text-4xl font-black mb-8">
+              $49<span class="text-base font-normal text-gray-400">/mo</span>
+            </div>
+            <ul class="text-left space-y-4 mb-8 text-gray-600">
+              <li>✅ All UI Components</li>
+              <li>✅ Lifetime Access</li>
+              <li>✅ Unlimited Projects</li>
+              <li>✅ 24/7 Priority Support</li>
+            </ul>
+            <button
+              class="w-full py-3 border-2 border-blue-600 text-blue-600 font-bold rounded-xl hover:bg-blue-50 transition"
+            >
+              Choose Premium
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 4. FOOTER -->
+    <footer class="bg-white py-12 px-6 border-t border-gray-100">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center"
+      >
+        <div class="text-2xl font-bold text-blue-600 mb-4 md:mb-0">
+          GoStartup
+        </div>
+        <p class="text-gray-500 text-sm">
+          © 2024 GoStartup Template. All rights reserved.
+        </p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="text-gray-400 hover:text-blue-600 transition"
+            >Privacy</a
+          >
+          <a href="#" class="text-gray-400 hover:text-blue-600 transition"
+            >Terms</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
